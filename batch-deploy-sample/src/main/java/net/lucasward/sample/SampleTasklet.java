@@ -10,6 +10,7 @@ import static org.springframework.batch.repeat.RepeatStatus.FINISHED;
 public class SampleTasklet implements Tasklet {
 
 	public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
+        System.out.println("Hello World");
 		return FINISHED;
 	}
 
